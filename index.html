@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOTEL PANARUNG - Palangka Raya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#E76F26;--peach:#FFDCC2;--brown:#5C3A21;--dark:#1A1A1A;--bg:#FFF8F2;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',sans-serif;}
+body{background:var(--bg);color:var(--dark);padding-bottom:80px;}
+.header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:3px solid var(--orange);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;}
+.logo{font-weight:800;font-size:20px;letter-spacing:-0.5px;color:var(--brown);} .logo span{color:var(--orange);}
+.nav a{margin-left:14px;text-decoration:none;color:var(--dark);font-weight:600;font-size:14px;}
+.hero{padding:28px 20px;background:linear-gradient(180deg,#fff 0%,#FFEEE0 100%);}
+.badge{display:inline-block;background:var(--peach);color:var(--brown);padding:6px 12px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:12px;}
+.hero h1{font-size:32px;line-height:0.95;letter-spacing:-1px;color:var(--brown);} .hero h1 span{color:var(--orange);}
+.hero p{margin-top:10px;color:#6b5a4a;font-size:14px;line-height:1.5;}
+.cta-row{margin-top:18px;display:flex;gap:10px;}
+.btn{padding:14px 18px;border-radius:14px;text-decoration:none;font-weight:700;font-size:14px;display:inline-flex;align-items:center;justify-content:center;flex:1;}
+.btn-primary{background:var(--orange);color:#fff;}
+.btn-outline{background:#fff;border:2px solid var(--orange);color:var(--orange);}
+.katalog{padding:20px;}
+.section-title{font-size:22px;font-weight:800;color:var(--brown);margin-bottom:4px;}
+.section-sub{font-size:13px;color:#8a7a6b;margin-bottom:16px;}
+.grid{display:grid;grid-template-columns:1fr;gap:16px;}
+.card{background:#fff;border-radius:20px;overflow:hidden;border:2px solid #FFE5D0;box-shadow:0 4px 20px rgba(231,111,38,0.08);}
+.card img{width:100%;height:auto;display:block;}
+.card-body{padding:14px 16px;}
+.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+.price{font-weight:800;font-size:18px;color:var(--orange);}
+.rooms{font-size:11px;background:var(--peach);padding:4px 8px;border-radius:8px;color:var(--brown);font-weight:700;}
+.fac{font-size:13px;color:#4a3a2d;line-height:1.4;}
+.book{margin-top:12px;width:100%;background:var(--dark);color:#fff;padding:12px;border-radius:12px;text-align:center;text-decoration:none;font-weight:700;font-size:14px;display:block;}
+.kontak{padding:20px;background:#fff;margin:20px;border-radius:20px;border:2px solid #FFE5D0;}
+.kontak h2{font-size:20px;color:var(--brown);margin-bottom:10px;}
+.info{font-size:14px;line-height:1.6;color:#4a3a2d;margin-bottom:10px;}
+.map-box{margin-top:16px;border-radius:16px;overflow:hidden;border:2px solid var(--orange);height:300px;}
+.map-box iframe{width:100%;height:100%;border:0;}
+.route-btn{margin-top:12px;background:var(--orange);color:#fff;padding:14px;border-radius:12px;text-align:center;text-decoration:none;font-weight:800;display:block;}
+.footer{text-align:center;padding:20px;font-size:12px;color:#9a8a7a;}
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:2px solid #FFE5D0;display:flex;justify-content:space-around;padding:10px 0;z-index:20;}
+.bottom-nav a{text-decoration:none;color:#9a8a7a;font-size:11px;text-align:center;font-weight:600;}
+.bottom-nav a.active{color:var(--orange);}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="logo">HOTEL <span>PANARUNG</span></div>
+  <div class="nav"><a href="#home">Home</a><a href="#katalog">Katalog</a><a href="#kontak">Kontak</a></div>
+</div>
+
+<div class="hero" id="home">
+  <div class="badge">📍 Jl. Dr Murjani No.51, Palangka Raya</div>
+  <h1>HOTEL <span>PANARUNG</span><br>NYAMAN & TERJANGKAU</h1>
+  <p>Hotel keluarga di pusat Palangka Raya. Harga mulai Rp 125.000 per malam. Kasur Single & Double, AC, TV, Air Panas, Sarapan.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="#katalog">Lihat Kamar</a>
+    <a class="btn btn-outline" href="https://maps.app.goo.gl/UneBsMLtS9qaUc4A8" target="_blank">Rute Maps</a>
+  </div>
+</div>
+
+<div class="katalog" id="katalog">
+  <div class="section-title">Katalog Kamar</div>
+  <div class="section-sub">Tap Booking untuk pesan langsung via WhatsApp Business</div>
+  <div class="grid">
+
+    <div class="card">
+      <img src="assets/kamar-1.webp" alt="Kamar 125K">
+      <div class="card-body">
+        <div class="card-top"><div class="price">Rp 125.000 / malam</div><div class="rooms">No 21-29</div></div>
+        <div class="fac"><b>Kasur:</b> Single & Double<br><b>Fasilitas:</b> Kipas Angin</div>
+        <a class="book" href="https://wa.me/6281234567890?text=Halo%20Hotel%20Panarung%2C%20saya%20mau%20booking%20kamar%20Rp125.000%20No%2021-29%20Kipas%20Angin" target="_blank">Booking via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/kamar-2.webp" alt="Kamar 175K">
+      <div class="card-body">
+        <div class="card-top"><div class="price">Rp 175.000 / malam</div><div class="rooms">No 03,04,08-11,30,31</div></div>
+        <div class="fac"><b>Kasur:</b> Single & Double<br><b>Fasilitas:</b> TV, AC</div>
+        <a class="book" href="https://wa.me/6281234567890?text=Halo%20Hotel%20Panarung%2C%20saya%20mau%20booking%20kamar%20Rp175.000%20TV%20AC" target="_blank">Booking via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/kamar-3.webp" alt="Kamar 200K Single">
+      <div class="card-body">
+        <div class="card-top"><div class="price">Rp 200.000 / malam</div><div class="rooms">No 02,05</div></div>
+        <div class="fac"><b>Kasur:</b> Single<br><b>Fasilitas:</b> TV, AC, Air Panas</div>
+        <a class="book" href="https://wa.me/6281234567890?text=Halo%20Hotel%20Panarung%2C%20saya%20mau%20booking%20kamar%20Rp200.000%20Single%20TV%20AC%20Air%20Panas" target="_blank">Booking via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/kamar-5.webp" alt="Kamar 200K Double">
+      <div class="card-body">
+        <div class="card-top"><div class="price">Rp 200.000 / malam</div><div class="rooms">No 07,26</div></div>
+        <div class="fac"><b>Kasur:</b> Double<br><b>Fasilitas:</b> TV, AC</div>
+        <a class="book" href="https://wa.me/6281234567890?text=Halo%20Hotel%20Panarung%2C%20saya%20mau%20booking%20kamar%20Rp200.000%20Double%20TV%20AC" target="_blank">Booking via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/kamar-6.webp" alt="Kamar 250K">
+      <div class="card-body">
+        <div class="card-top"><div class="price">Rp 250.000 / malam</div><div class="rooms">No 06,12,13,32</div></div>
+        <div class="fac"><b>Kasur:</b> Single & Double<br><b>Fasilitas:</b> TV, AC, Air Panas</div>
+        <a class="book" href="https://wa.me/6281234567890?text=Halo%20Hotel%20Panarung%2C%20saya%20mau%20booking%20kamar%20Rp250.000" target="_blank">Booking via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/kamar-4.webp" alt="Kamar 400K">
+      <div class="card-body">
+        <div class="card-top"><div class="price">Rp 400.000 / malam</div><div class="rooms">No 01</div></div>
+        <div class="fac"><b>Kasur:</b> Single<br><b>Fasilitas:</b> TV, AC, Air Panas, Sarapan</div>
+        <a class="book" href="https://wa.me/6281234567890?text=Halo%20Hotel%20Panarung%2C%20saya%20mau%20booking%20kamar%20Rp400.000%20plus%20Sarapan" target="_blank">Booking via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card" style="border-color:var(--orange);border-width:3px;">
+      <img src="assets/kamar-7.webp" alt="Kamar 500K VIP">
+      <div class="card-body">
+        <div class="card-top"><div class="price">Rp 500.000 / malam - VIP</div><div class="rooms">Ruang Utama</div></div>
+        <div class="fac"><b>Kasur:</b> Single<br><b>Fasilitas:</b> TV, AC, Air Panas, Sarapan, Ruang Tamu, Ruang Utama</div>
+        <a class="book" style="background:var(--orange);" href="https://wa.me/6281234567890?text=Halo%20Hotel%20Panarung%2C%20saya%20mau%20booking%20VIP%20Ruang%20Utama%20Rp500.000" target="_blank">Booking VIP via WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="kontak" id="kontak">
+  <h2>Kontak & Alamat</h2>
+  <div class="info">
+    <b>HOTEL PANARUNG</b><br>
+    Jl. Dr Murjani No.51, Langkai, Pahandut<br>
+    Kec. Pahandut, Kota Palangka Raya<br>
+    Kalimantan Tengah 73111<br><br>
+    <b>Check-in:</b> 14:00 &nbsp; <b>Check-out:</b> 12:00<br>
+    <b>WhatsApp:</b> +62 812-xxxx-xxxx (ganti nomor kamu)<br>
+    <b>Email:</b> hotelpanarung@gmail.com
+  </div>
+  <div class="map-box">
+    <iframe src="https://www.google.com/maps?q=Jl.+Dr+Murjani+No.51+Palangka+Raya&z=16&output=embed" loading="lazy"></iframe>
+  </div>
+  <a class="route-btn" href="https://www.google.com/maps/dir/?api=1&destination=Jl.+Dr+Murjani+No.51+Langkai+Pahandut+Palangka+Raya" target="_blank">📍 Rute Otomatis ke Hotel Panarung</a>
+  <a class="route-btn" style="background:#fff;color:var(--orange);border:2px solid var(--orange);margin-top:8px;" href="https://maps.app.goo.gl/UneBsMLtS9qaUc4A8" target="_blank">Buka di Google Maps</a>
+</div>
+
+<div class="footer">© 2026 HOTEL PANARUNG • Dibuat untuk resepsionis & cleaning service • Mobile First</div>
+
+<div class="bottom-nav">
+  <a href="#home" class="active">🏠<br>Home</a>
+  <a href="#katalog">🛏️<br>Katalog</a>
+  <a href="https://wa.me/6281234567890">💬<br>Booking</a>
+  <a href="#kontak">📍<br>Alamat</a>
+</div>
+
+<script>
+// ganti nomor WA di semua link booking
+const WA_NUMBER = "6281234567890"; // GANTI dengan nomor WhatsApp Business kamu
+document.querySelectorAll('a.book').forEach(a=>{
+  a.href = a.href.replace(/6281234567890/, WA_NUMBER);
+});
+document.querySelectorAll('.bottom-nav a')[2].href = `https://wa.me/${WA_NUMBER}?text=Halo%20Hotel%20Panarung`;
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+  anchor.addEventListener('click',function(e){
+    const href=this.getAttribute('href');
+    if(href.startsWith('#')){
+      e.preventDefault();
+      document.querySelector(href)?.scrollIntoView({behavior:'smooth'});
+    }
+  });
+});
+
+// Auto detect user location for route button
+const routeBtn = document.querySelector('.route-btn');
+if(navigator.geolocation){
+  routeBtn.addEventListener('click', (e)=>{
+    // let browser handle, but we try to add origin if possible
+    // Google Maps dir api will auto use current location if origin empty and user allows
+  });
+}
+</script>
+</body>
+</html>
