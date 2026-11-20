@@ -24,3 +24,9 @@ Website statis, siap deploy ke Cloudflare Pages via GitHub.
 
 ## Catatan
 - Ganti harga / nomor kamar di `kamar.html` + `index.html` + `assets/katalog.jpg` kalau ada perubahan.
+
+## TROUBLESHOOTING: map.html tidak bisa diakses
+Cek 3 ini berurutan:
+1. Di GitHub, yang ada di root repo HARUS file-file (index.html, map.html, css/, js/, dll), BUKAN file hotelpanarung-pages.zip. Kalau masih ada .zip di repo, extract dulu di laptop lalu upload isinya.
+2. Coba buka langsung: https://hotelpanarung.pages.dev/map.html — kalau ini jalan tapi /map tidak, berarti _redirects belum ter-deploy, tunggu 1-2 menit lalu redeploy di Cloudflare Pages > Deployments > Retry deployment.
+3. Kalau buka file lokal (file://) dan halaman kosong, itu karena fetch() diblokir browser. Versi v2 ini sudah ada fallback nav inline, jadi harusnya tetap tampil. Cara paling benar tes lokal: jalankan `npx serve .` atau `python -m http.server 8000` lalu buka http://localhost:8000/map.html
